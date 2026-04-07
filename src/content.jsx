@@ -11,6 +11,7 @@ let reloadInProgress = false;
 
 const failureSignals = [
     "incorrect. please try again.",
+    "time limit exceeded. please try again.",
     "failed to solve",
     "nopecha failed",
     "solve error",
