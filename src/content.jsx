@@ -68,11 +68,8 @@ function scanShadowRoots() {
 function handleReload(reason) {
     if (reloadInProgress) return;
     reloadInProgress = true;
-    console.warn(`[NopeCHA-Reload] ${reason} -> Tab will refresh in 3 seconds.`);
-    
-    setTimeout(() => {
-        window.location.reload();
-    }, 3000);
+    console.warn(`[NopeCHA-Reload] ${reason} -> Tab will refresh now.`);
+    window.location.reload();
 }
 
 // 1. High-speed Mutation Observer for instant detection
